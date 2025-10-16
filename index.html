@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Derrick M Ngeleka - Cloud Engineer, System Administrator, and Web Developer Portfolio">
+  <meta name="color-scheme" content="light dark" />
+  <title>Derrick M Ngeleka | Cloud Engineer & System Administrator</title>
+
+  <!-- Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="./src/styles/styles.css" />
+  <script src="./src/scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./src/pages/my-resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li><a href="#projects"><i class="fas fa-code-branch"></i> Projects</a></li>
+        <li><a href="./src/pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+    </header>
+
+    <!-- hero moved outside header so it scrolls underneath fixed navbar -->
+    <div class="hero" role="img" aria-label="Portfolio background image">
+      <div class="hero-overlay"></div>
+      <h1>Derrick M Ngeleka</h1>
+      <h2 data-type="Cloud Engineer • System Administrator • Web Developer">
+        Cloud Engineer • System Administrator • Web Developer
+      </h2>
+      <div class="hero-cta">
+        <a href="contact.html" class="cta-button primary">Get in Touch</a>
+        <a href="my-resume.html" class="cta-button secondary">View Resume</a>
+      </div>
+      <div class="hero-scrollhint" aria-hidden="true"><span class="chev"></span></div>
+    </div>
+
+  <main role="main" class="main-content" aria-label="Main content">
+    <section class="welcome-section" id="about">
+      <div class="container">
+        <h2><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-content">
+          <p>
+            Hello! I'm Derrick M Ngeleka, a passionate Cloud Engineer, System Administrator, and Web Developer.
+            With over five years of experience in IT operations, I specialize in managing cloud services like
+            Azure Virtual Desktop, Virtual Machines, Storage Accounts, and Entra ID. I am proficient in automation tools such as
+            Terraform, Bash, Ansible, Packer, and PowerShell. My expertise also extends to Microsoft 365 solutions including
+            Defender for Office 365 and Exchange Online.
+          </p>
+          <p>
+            I also have strong on-prem experience: Windows Server, Active Directory, VMware/Hyper-V, and networking.
+            I’m currently pursuing a B.S. in Computer Science at Arizona State University to deepen my engineering toolkit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2><i class="fas fa-laptop-code"></i> Core Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Cloud & DevOps</h3>
+            <ul>
+              <li><i class="fa-brands fa-microsoft"></i> Azure Cloud Services</li>
+              <li><i class="fas fa-server"></i> Infrastructure as Code</li>
+              <li><i class="fas fa-terminal"></i> Terraform & Ansible</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>System Administration</h3>
+            <ul>
+              <li><i class="fa-brands fa-windows"></i> Windows Server</li>
+              <li><i class="fas fa-network-wired"></i> Active Directory</li>
+              <li><i class="fas fa-shield-halved"></i> Security Management</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Development</h3>
+            <ul>
+              <li><i class="fas fa-code"></i> Web Development</li>
+              <li><i class="fa-brands fa-python"></i> Python Scripting</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Cloud Infrastructure Automation</h3>
+            <p>Automated Azure infrastructure deployment using Terraform and Azure DevOps pipelines.</p>
+            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="project-card">
+            <h3>Web Application Development</h3>
+            <p>Responsive web apps using modern JavaScript front-ends and cloud back-ends.</p>
+            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="project-card">
+            <h3>System Administration Tools</h3>
+            <p>Automation scripts and tools for Windows Server and Active Directory management.</p>
+            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourusername" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Derrick M Ngeleka. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
