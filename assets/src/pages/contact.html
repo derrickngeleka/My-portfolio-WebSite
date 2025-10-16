@@ -3,74 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Derrick M Ngeleka - Cloud Engineer, System Administrator, and Web Developer">
   <meta name="color-scheme" content="light dark" />
-  <title>Contact | Derrick M Ngeleka</title>
+  <title>Contact Me | Derrick M Ngeleka</title>
+  
+  <!-- Fonts / Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
   <link rel="stylesheet" href="../styles/styles.css" />
   <script src="../scripts/main.js" defer></script>
+  <script src="../scripts/contact.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html" class="brand" aria-label="Home">⬅ Back</a>
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
       <ul class="nav-list">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="my-resume.html">Resume</a></li>
+        <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./my-resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li><a href="../../../index.html#projects"><i class="fas fa-code-branch"></i> Projects</a></li>
+        <li><a href="./contact.html" aria-current="page"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </nav>
   </header>
 
-  <main class="container">
-    <h1 class="page-title">Contact Me</h1>
-    <p class="page-intro">I’m always open to connecting about Azure, automation, or new opportunities.</p>
+  <div class="hero small" role="img" aria-label="Contact page background">
+    <div class="hero-overlay"></div>
+    <h1>Let's Connect</h1>
+    <h2>I'm always open to discussing new projects, opportunities, or collaborations</h2>
+  </div>
+
+  <main class="contact-main-container">
+    <div class="contact-intro">
+      <p class="intro-text">
+        <i class="fas fa-comments"></i>
+        Whether you have a question about cloud engineering, automation, or just want to say hi, feel free to reach out!
+      </p>
+    </div>
 
     <section class="contact-grid">
-      <div class="contact-card">
-        <h2><i class="fa-solid fa-id-badge"></i> Reach me</h2>
-        <ul class="contact-list">
-          <li><i class="fa-solid fa-location-dot"></i> Boise, Idaho</li>
-          <li>
+      <div class="contact-info-section">
+        <div class="contact-card-modern">
+          <div class="card-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3>Location</h3>
+          <p>Boise, Idaho</p>
+          <p class="card-subtext">Open to remote opportunities</p>
+        </div>
+
+        <div class="contact-card-modern">
+          <div class="card-icon">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:derrickngeleka77@gmail.com">derrickngeleka77@gmail.com</a>
-            <button class="copy-btn" data-copy="derrickngeleka77@gmail.com" aria-label="Copy email">Copy</button>
-          </li>
-          <li>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:derrickngeleka77@gmail.com">derrickngeleka77@gmail.com</a></p>
+          <button class="copy-btn-modern" data-copy="derrickngeleka77@gmail.com" aria-label="Copy email">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+
+        <div class="contact-card-modern">
+          <div class="card-icon">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+19862362074">(986) 236-2074</a>
-            <button class="copy-btn" data-copy="+19862362074" aria-label="Copy phone">Copy</button>
-          </li>
-          <li><i class="fa-brands fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/derrick-ngeleka-55b8331b0/">linkedin.com/in/derrickngeleka</a></li>
-          <li><i class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/derrickngeleka">github.com/derrickngeleka</a></li>
-        </ul>
+          </div>
+          <h3>Phone</h3>
+          <p><a href="tel:+19862362074">(986) 236-2074</a></p>
+          <button class="copy-btn-modern" data-copy="+19862362074" aria-label="Copy phone">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+
+        <div class="contact-card-modern social-links-card">
+          <div class="card-icon">
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+          <h3>Social Media</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/derrick-ngeleka-55b8331b0/" target="_blank" rel="noopener" class="social-link linkedin" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/derrickngeleka" target="_blank" rel="noopener" class="social-link github" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <form class="contact-card contact-form" name="contact" method="POST" data-netlify="true">
-        <h2><i class="fa-solid fa-paper-plane"></i> Send a message</h2>
-        <input type="hidden" name="form-name" value="contact" />
-        <label>
-          <span>Name</span>
-          <input required name="name" autocomplete="name" />
-        </label>
-        <label>
-          <span>Email</span>
-          <input required type="email" name="email" autocomplete="email" />
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea required name="message" rows="6"></textarea>
-        </label>
-        <button class="cta-button primary" type="submit">Send</button>
-        <p class="form-note">No spam. I usually reply within 1–2 days.</p>
-      </form>
+      <div class="contact-form-section">
+        <form class="contact-form-modern" name="contact" method="POST" data-netlify="true">
+          <div class="form-header">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h2>Send Me a Message</h2>
+            <p>Fill out the form below and I'll get back to you soon</p>
+          </div>
+          
+          <input type="hidden" name="form-name" value="contact" />
+          
+          <div class="form-group">
+            <label for="name">
+              <i class="fas fa-user"></i>
+              <span>Your Name</span>
+            </label>
+            <input 
+              id="name" 
+              type="text" 
+              name="name" 
+              autocomplete="name" 
+              placeholder="John Doe" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">
+              <i class="fas fa-envelope"></i>
+              <span>Your Email</span>
+            </label>
+            <input 
+              id="email" 
+              type="email" 
+              name="email" 
+              autocomplete="email" 
+              placeholder="john@example.com" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">
+              <i class="fas fa-tag"></i>
+              <span>Subject</span>
+            </label>
+            <input 
+              id="subject" 
+              type="text" 
+              name="subject" 
+              placeholder="What's this about?" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">
+              <i class="fas fa-comment-dots"></i>
+              <span>Your Message</span>
+            </label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              placeholder="Tell me more about your project or inquiry..." 
+              required
+            ></textarea>
+          </div>
+
+          <button class="submit-btn" type="submit">
+            <i class="fas fa-paper-plane"></i>
+            <span>Send Message</span>
+          </button>
+          
+          <p class="form-note">
+            <i class="fas fa-shield-alt"></i>
+            Your information is safe with me. I typically respond within 1-2 business days.
+          </p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container"><p class="footer-text">&copy; 2025 Derrick M Ngeleka.</p></div>
+  <footer role="contentinfo" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/derrick-ngeleka-55b8331b0" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/derrickngeleka" target="_blank" rel="noopener" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+          <a href="mailto:derrickngeleka77@gmail.com" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Derrick M Ngeleka. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
