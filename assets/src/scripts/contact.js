@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Get form data
       const formData = new FormData(form);
+      const name = formData.get('name') || '';
+      const email = formData.get('email') || '';
+      const subject = formData.get('subject') || 'Website Contact';
+      const message = formData.get('message') || '';
       
       try {
         // Submit to Netlify
@@ -76,7 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } catch (error) {
         console.error('Error:', error);
-        showMessage('error', 'Oops! Something went wrong. Please try again or email me directly.');
+        // Fallback to mailto when not on Netlify or network blocked
+        try {
+          const mailto = new URL('mailto:derrickngeleka77@gmail.com');
+          mailto.searchParams.set('subject', `[Portfolio] ${subject}`);
+          const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+          mailto.searchParams.set('body', body);
+          window.location.href = mailto.toString();
+          showMessage('success', 'Opening your email client… if it doesn\'t open, email me directly.');
+        } catch (e2) {
+          showMessage('error', 'Oops! Something went wrong. Please try again or email me directly.');
+        }
       } finally {
         // Reset button
         submitBtn.innerHTML = originalBtnContent;

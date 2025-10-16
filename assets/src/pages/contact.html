@@ -99,7 +99,7 @@
       </div>
 
       <div class="contact-form-section">
-        <form class="contact-form-modern" name="contact" method="POST" data-netlify="true">
+  <form class="contact-form-modern" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
           <div class="form-header">
             <i class="fa-solid fa-paper-plane"></i>
             <h2>Send Me a Message</h2>
@@ -107,6 +107,13 @@
           </div>
           
           <input type="hidden" name="form-name" value="contact" />
+          <!-- Netlify honeypot field (invisible to users) -->
+          <p class="visually-hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <noscript>
+            <p class="form-note">JavaScript is disabled. The form will submit without animations.</p>
+          </noscript>
           
           <div class="form-group">
             <label for="name">
