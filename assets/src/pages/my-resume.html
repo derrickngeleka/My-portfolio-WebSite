@@ -1,79 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>Resume | Derrick M Ngeleka</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="../styles/styles.css" />
-  <script src="../scripts/" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derrick M Ngeleka - Resume | Cloud Engineer & System Administrator</title>
+    <meta name="description" content="Professional resume of Derrick M Ngeleka - Cloud Engineer, System Administrator, and Web Developer">
+    
+    <!-- Fonts / Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+            <ul class="nav-list">
+                <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="./my-resume.html" aria-current="page"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="../../../index.html#projects"><i class="fas fa-code-branch"></i> Projects</a></li>
+                <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
     <div class="hero small" role="img" aria-label="Resume background image">
-      <div class="hero-overlay"></div>
-      <h1>Derrick M Ngeleka</h1>
-      <h2>Cloud Engineer • System Administrator • Web Developer</h2>
+        <div class="hero-overlay"></div>
+        <h1>Derrick M Ngeleka</h1>
+        <h2>Cloud Engineer | System Administrator | Web Developer</h2>
     </div>
-  </header>
 
-  <main class="container">
-    <section>
-      <h2>Professional Summary</h2>
-      <p>
-        Cloud Engineer and System Administrator with 5+ years in IT operations. Depth in Azure (AVD, VMs, Storage, Entra ID),
-        automation (Terraform, Bash, Ansible, Packer, PowerShell), and Microsoft 365 (Defender for O365, Exchange Online).
-        Strong on-prem background (Windows Server, AD, VMware/Hyper-V, networking). Pursuing a B.S. in Computer Science (ASU).
-      </p>
-    </section>
+    <main class="resume-container">
+        <div class="resume-header-actions">
+            <a class="btn-resume btn-primary" href="../../pdf/myResume.pdf" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+            <button class="btn-resume btn-secondary" id="print-resume">
+                <i class="fas fa-print"></i> Print / Save PDF
+            </button>
+        </div>
 
-    <section>
-      <h2>Objective Statement</h2>
-      <p>
-        Design and operate secure, scalable cloud platforms. Apply Azure, Terraform and DevOps practices
-        while growing into Cloud Architecture leadership.
-      </p>
-    </section>
+        <div class="resume-body">
+            <section class="resume-main">
+                                <div class="resume-section">
+                    <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+                    <div class="section-content">
+                        <p>
+                            I am a Cloud Engineer and System Administrator with over five years of IT operations experience, specializing
+                            in managing services such as Azure Virtual Desktop, Virtual Machines, Storage Accounts, Entra ID and more. I am skilled
+                            in automation using Terraform, Bash, Ansible, Packer and PowerShell, and I have expertise in
+                            Microsoft 365 solutions such as Defender for Office 365 and Exchange Online. Additionally, I have experience
+                            with on-premises infrastructure management, including Windows Server administration, Active Directory,
+                            virtualization (VMware/Hyper-V), and network configuration. I am also pursuing a bachelor's in computer
+                            science at Arizona State.
+                        </p>
+                    </div>
+                </div>
 
-    <section>
-      <h2>Experience</h2>
-      <p><!-- Add roles here --></p>
-    </section>
+                <div class="resume-section">
+                    <h2><i class="fas fa-bullseye"></i> Objective Statement</h2>
+                    <div class="section-content">
+                        <p>To leverage my experience in cloud engineering, system administration, and automation to design, implement, and manage secure, scalable cloud solutions. I aim to contribute to an innovative organization where I can apply my skills in Microsoft Azure, Terraform, and DevOps practices while continuing to grow as a Cloud Architect and technology leader.</p>
+                    </div>
+                </div>
 
-    <section>
-      <h2>Education</h2>
-      <h4>Arizona State University</h4>
-      <p>B.S. in Computer Science (In Progress) — Expected May 2028</p>
-      <h4>College of Western Idaho</h4>
-      <p>A.A.S. in Network & Systems Administration — May 2020</p>
-    </section>
+                <div class="resume-section">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                    <div class="section-content">
+                        <p>Positions and project details can be added here. Use bullet lists or short paragraphs to make this readable.</p>
+                    </div>
+                </div>
+            </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills-inline">
-        <li>Azure</li><li>Terraform</li><li>PowerShell</li><li>Ansible</li><li>Packer</li>
-        <li>Windows Server</li><li>Active Directory</li><li>Microsoft 365</li><li>Python</li><li>JavaScript</li>
-      </ul>
-    </section>
+            <aside class="resume-side">
+                <div class="card contact-card">
+                    <h3><i class="fas fa-address-card"></i> Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Boise, Idaho</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:derrickngeleka77@gmail.com">derrickngeleka77@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p><a href="tel:+19862362074">(986) 236-2074</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://www.linkedin.com/in/derrick-ngeleka-55b8331b0/" target="_blank" rel="noopener">linkedin.com/in/derrickngeleka</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p><a href="https://github.com/derrickngeleka" target="_blank" rel="noopener">github.com/derrickngeleka</a></p>
+                        </div>
+                    </div>
+                </div>
 
-    <section>
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li><i class="fa-solid fa-location-dot"></i> Boise, Idaho</li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:derrickngeleka77@gmail.com">derrickngeleka77@gmail.com</a></li>
-        <li><i class="fa-solid fa-phone"></i> <a href="tel:+19862362074">(986) 236-2074</a></li>
-        <li><i class="fa-brands fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/derrick-ngeleka-55b8331b0/">linkedin.com/in/derrickngeleka</a></li>
-        <li><i class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/derrickngeleka">github.com/derrickngeleka</a></li>
-      </ul>
-    </section>
-  </main>
+                <div class="card education-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education-item">
+                        <h4>Arizona State University</h4>
+                        <p class="degree">B.S. Computer Science (In Progress)</p>
+                        <p class="date"><i class="far fa-calendar"></i> Expected May 2028</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>College of Western Idaho</h4>
+                        <p class="degree">Associate of Applied Science in Network and Systems Administration</p>
+                        <p class="date"><i class="far fa-calendar"></i> Graduated May 2020</p>
+                    </div>
+                </div>
 
-  <footer class="footer">
-    <div class="container"><p class="footer-text">&copy; 2025 DMNLAABS.COM All rights reserved.</p></div>
-  </footer>
+                <div class="card skills-card">
+                    <h3><i class="fas fa-tools"></i> Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-microsoft"></i> Azure / Cloud Architecture</li>
+                        <li><i class="fas fa-code-branch"></i> Terraform / Infrastructure as Code</li>
+                        <li><i class="fas fa-terminal"></i> PowerShell / Bash / Ansible</li>
+                        <li><i class="fab fa-windows"></i> Windows Server / Active Directory</li>
+                        <li><i class="fas fa-server"></i> VMware / Hyper-V</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 DMNLAABS.COM All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/resume.js"></script>
 </body>
 </html>
