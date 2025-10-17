@@ -27,28 +27,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Add animation on scroll for resume sections
+  // Animation on scroll for resume sections and experience cards
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, idx) => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe all resume sections and cards
-  document.querySelectorAll('.resume-section, .card').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  // Animate experience cards and resume sections
+  document.querySelectorAll('.animate-on-scroll, .resume-section, .card').forEach(section => {
     observer.observe(section);
   });
+
+  // Animate tech skill cards with staggered effect
+  const skillCards = document.querySelectorAll('.animate-skill');
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, idx) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, idx * 120);
+        skillObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  skillCards.forEach(card => skillObserver.observe(card));
 
   // Copy to clipboard functionality for contact info
   document.querySelectorAll('.contact-item a').forEach(link => {

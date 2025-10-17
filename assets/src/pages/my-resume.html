@@ -70,10 +70,65 @@
                     </div>
                 </div>
 
-                <div class="resume-section">
-                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
-                    <div class="section-content">
-                        <p>Positions and project details can be added here. Use bullet lists or short paragraphs to make this readable.</p>
+                <div class="resume-section experience-section">
+                    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                    <div class="experience-timeline">
+                        <div class="experience-card animate-on-scroll">
+                            <div class="exp-header">
+                                <div class="exp-icon"><i class="fas fa-cloud"></i></div>
+                                <div>
+                                    <h3>PacificSource Health Plans</h3>
+                                    <span class="exp-role">Cloud Services Administrator</span>
+                                </div>
+                                <span class="exp-dates">Feb 2023–Present</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Support development teams by building and managing Azure infrastructure, including Storage Accounts, Virtual Machines, Function Apps, App Registrations, and other Azure resources.</li>
+                                <li>Manage and monitor Azure environments, ensuring all deployed resources are optimized, secured, and aligned with organizational standards.</li>
+                                <li>Perform resource lifecycle management, identifying and removing unused or outdated assets to control costs and maintain efficiency.</li>
+                                <li>Configure and maintain Azure Backup and Recovery Services Vaults to protect virtual machines, workloads, and application data.</li>
+                                <li>Administer Microsoft 365 services, including group creation, user access control, Defender for Office 365, Microsoft 365 Copilot, Intune, Exchange Online, and Microsoft Purview to enhance security and collaboration.</li>
+                                <li>Collaborate with developers and IT teams to automate deployments, troubleshoot environment issues, and implement best practices for scalability and reliability.</li>
+                                <li>Maintain compliance and operational integrity through regular audits, patching, and configuration management.</li>
+                                <li>Utilized Terraform to provision and manage infrastructure as code, enabling scalable, repeatable infrastructure setups.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-card animate-on-scroll">
+                            <div class="exp-header">
+                                <div class="exp-icon"><i class="fas fa-network-wired"></i></div>
+                                <div>
+                                    <h3>Stability Networks – Boise, ID</h3>
+                                    <span class="exp-role">System Administrator</span>
+                                </div>
+                                <span class="exp-dates">Jan 2022–Feb 2023</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Deployed and managed Hyper-V servers, including provisioning and configuring virtual machines to meet organizational needs.</li>
+                                <li>Conducted regular backups, updates, and patching of servers to maintain security, stability, and compliance.</li>
+                                <li>Configured and deployed workstations, ensuring optimized performance and adherence to organizational standards.</li>
+                                <li>Performed routine patch management for both servers and workstations, reducing vulnerabilities and enhancing system reliability.</li>
+                                <li>Administered and maintained Active Directory across Microsoft Windows Server environments (2008–2022), implementing access policies and ensuring consistent identity management.</li>
+                                <li>Configured and supported Azure Virtual Desktop, enabling secure and efficient remote access for end users.</li>
+                                <li>Diagnosed and resolved IP connectivity and network performance issues, minimizing downtime and improving network reliability.</li>
+                                <li>Provided ongoing technical support and troubleshooting for end users, enhancing overall IT efficiency and satisfaction.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-card animate-on-scroll">
+                            <div class="exp-header">
+                                <div class="exp-icon"><i class="fas fa-server"></i></div>
+                                <div>
+                                    <h3>Computer Arts Inc. – Boise, ID</h3>
+                                    <span class="exp-role">Network Support Specialist</span>
+                                </div>
+                                <span class="exp-dates">Jan 2020–Jan 2022</span>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Managed over 20 Windows servers in a hybrid on-premises and cloud environment, implementing automation scripts for maintenance.</li>
+                                <li>Provisioned infrastructure and managed configurations using Terraform and Ansible.</li>
+                                <li>Deployed and administered Exchange servers and Active Directory environments to support organizational needs.</li>
+                                <li>Improved system resilience through automated backup solutions and device configuration management.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -132,15 +187,82 @@
                     </div>
                 </div>
 
-                <div class="card skills-card">
-                    <h3><i class="fas fa-tools"></i> Skills</h3>
-                    <ul class="skills-list">
-                        <li><i class="fab fa-microsoft"></i> Azure / Cloud Architecture</li>
-                        <li><i class="fas fa-code-branch"></i> Terraform / Infrastructure as Code</li>
-                        <li><i class="fas fa-terminal"></i> PowerShell / Bash / Ansible</li>
-                        <li><i class="fab fa-windows"></i> Windows Server / Active Directory</li>
-                        <li><i class="fas fa-server"></i> VMware / Hyper-V</li>
-                    </ul>
+                <div class="card skills-card tech-skills-section">
+                    <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+                    <div class="tech-skills-grid">
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#2563eb,#60a5fa);"><i class="fab fa-microsoft"></i></div>
+                            <div>
+                                <h4>Cloud Platforms</h4>
+                                <ul>
+                                    <li>Azure (Virtual Desktop, Entra ID, VMs, Storage Accounts, Conditional Access)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#3b82f6,#60a5fa);"><i class="fab fa-microsoft"></i></div>
+                            <div>
+                                <h4>Microsoft 365 Services</h4>
+                                <ul>
+                                    <li>Defender for Office 365, Copilot, Intune, Exchange Online, Microsoft Purview</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#6366f1,#60a5fa);"><i class="fas fa-code-branch"></i></div>
+                            <div>
+                                <h4>IaC & Automation</h4>
+                                <ul>
+                                    <li>Terraform, Ansible, PowerShell, Bicep, ARM Templates</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#0ea5e9,#2563eb);"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h4>CI/CD</h4>
+                                <ul>
+                                    <li>Azure DevOps, Git, GitKraken</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#0891b2,#60a5fa);"><i class="fab fa-docker"></i></div>
+                            <div>
+                                <h4>Containerization</h4>
+                                <ul>
+                                    <li>Docker (moderate), Kubernetes (Learning)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#22d3ee,#2563eb);"><i class="fas fa-tasks"></i></div>
+                            <div>
+                                <h4>Configuration Management</h4>
+                                <ul>
+                                    <li>Ansible</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#0ea5e9,#3b82f6);"><i class="fas fa-network-wired"></i></div>
+                            <div>
+                                <h4>Networking & System</h4>
+                                <ul>
+                                    <li>DNS, DHCP, Active Directory, VPN, TCP/IP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-skill-group animate-skill">
+                            <div class="skill-group-icon" style="background:linear-gradient(135deg,#2563eb,#6366f1);"><i class="fas fa-server"></i></div>
+                            <div>
+                                <h4>Virtualization</h4>
+                                <ul>
+                                    <li>VMware, Hyper-V</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
