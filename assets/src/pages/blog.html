@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Derrick M Ngeleka - Blog on Cloud Engineering, System Administration, and Web Development">
+  <meta name="color-scheme" content="light dark" />
+  <title>Blog | Derrick M Ngeleka</title>
+
+  <!-- Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script src="../scripts/main.js" defer></script>
+  <script src="../scripts/blog.js" defer></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <ul class="nav-list">
+        <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="my-resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li><a href="../../../index.html#projects"><i class="fas fa-code-branch"></i> Projects</a></li>
+        <li><a href="blog.html" aria-current="page"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main role="main" class="main-content blog-main" aria-label="Blog content">
+    <section class="page-hero">
+      <div class="container">
+        <h1><i class="fas fa-blog"></i> My Blog</h1>
+        <p class="page-subtitle">Insights on Cloud Engineering, DevOps, System Administration, and Web Development</p>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-filters">
+          <button class="filter-btn active" data-category="all">All Posts</button>
+          <button class="filter-btn" data-category="cloud">Cloud</button>
+          <button class="filter-btn" data-category="devops">DevOps</button>
+          <button class="filter-btn" data-category="sysadmin">System Admin</button>
+          <button class="filter-btn" data-category="webdev">Web Development</button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+          <!-- Blog posts will be dynamically loaded here -->
+          <article class="blog-card" data-category="cloud">
+            <div class="blog-card-header">
+              <span class="blog-category cloud">Cloud</span>
+              <span class="blog-date">October 15, 2025</span>
+            </div>
+            <h3>Getting Started with Azure Virtual Desktop</h3>
+            <p>Learn how to set up and configure Azure Virtual Desktop (AVD) for your organization, including best practices for security and performance optimization.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="devops">
+            <div class="blog-card-header">
+              <span class="blog-category devops">DevOps</span>
+              <span class="blog-date">October 10, 2025</span>
+            </div>
+            <h3>Infrastructure as Code with Terraform</h3>
+            <p>A comprehensive guide to managing Azure infrastructure using Terraform, including modules, state management, and CI/CD integration.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="sysadmin">
+            <div class="blog-card-header">
+              <span class="blog-category sysadmin">System Admin</span>
+              <span class="blog-date">October 5, 2025</span>
+            </div>
+            <h3>Active Directory Security Best Practices</h3>
+            <p>Essential security configurations and monitoring strategies to protect your Active Directory environment from common threats and attacks.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 6 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="cloud">
+            <div class="blog-card-header">
+              <span class="blog-category cloud">Cloud</span>
+              <span class="blog-date">September 28, 2025</span>
+            </div>
+            <h3>Azure Cost Optimization Strategies</h3>
+            <p>Practical tips and strategies to reduce your Azure cloud costs without compromising performance or reliability.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 7 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="webdev">
+            <div class="blog-card-header">
+              <span class="blog-category webdev">Web Development</span>
+              <span class="blog-date">September 20, 2025</span>
+            </div>
+            <h3>Building Responsive Web Applications</h3>
+            <p>Modern techniques for creating responsive, accessible web applications that work seamlessly across all devices and screen sizes.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="devops">
+            <div class="blog-card-header">
+              <span class="blog-category devops">DevOps</span>
+              <span class="blog-date">September 15, 2025</span>
+            </div>
+            <h3>Automating Deployments with Azure DevOps</h3>
+            <p>Step-by-step guide to setting up CI/CD pipelines in Azure DevOps for automated testing and deployment of your applications.</p>
+            <div class="blog-card-footer">
+              <span class="read-time"><i class="fas fa-clock"></i> 10 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="blog-pagination">
+          <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+          <span class="pagination-info">Page 1 of 1</span>
+          <button class="pagination-btn" disabled>Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourusername" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2025 DMNLAABS.COM All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
